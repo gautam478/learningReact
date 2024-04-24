@@ -1,4 +1,4 @@
-import Print from './Print.jsx';
+import Print from './components/Print.jsx';
 import {useState} from "react";
 
 export default function App() {
@@ -14,10 +14,11 @@ export default function App() {
     }
     return (
         <>
-            <Print/>
+            <Print display="lets start this thing" extra="yoo"/>
             <h2 className={'bg-sky-300'}>count is {count}</h2>
             <button className={'bg-blue-500'} onClick={addVal}>add value</button>
             <button className={'bg-blue-300'} onClick={minusVal}>minus value</button>
+            <Print display="lets end this thing" extra="wowwww"/>
         </>
     )
 }
